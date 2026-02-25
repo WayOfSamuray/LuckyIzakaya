@@ -1,0 +1,58 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('/bg-main-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+}
+
+.menuSection {
+  position: relative;
+  z-index: 2;
+  padding-top: 180px;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+  position: relative;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.card:hover .overlay {
+  background: rgba(0, 0, 0, 0.55);
+}

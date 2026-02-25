@@ -1,0 +1,101 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(/bg-main-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  min-height: 100vh;
+  padding: 200px 80px 120px;
+}
+
+.left {
+  flex: 1;
+  max-width: 560px;
+  color: #fff;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+    position: relative;
+    padding: 14px 28px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.buttons button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.buttons button:hover {
+    color: #000;
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+.buttons button:hover::before {
+    transform: scaleX(1);
+}
+
+.buttons button:active {
+    transform: translateY(0);
+}
+
+.policy {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.policy span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
