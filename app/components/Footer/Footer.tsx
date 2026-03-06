@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
             <div className={styles.line} />
         <div className={styles.bottom}>
-        <p>Разработка сайта</p>
+        <p>Разработка сайта Cirlan Petru</p>
         </div>
         </footer>
     )

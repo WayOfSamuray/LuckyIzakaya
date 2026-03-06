@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link href='#'>
+        <Link href='http://localhost:3000/'>
         <img src="/logo.png" alt="Lucky Izakaya Bar"
         className={styles.logoImg}
         />
