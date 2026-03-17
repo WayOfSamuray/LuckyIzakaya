@@ -1,0 +1,114 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/shopImages/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 35, 5, 0.72);
+}
+
+.container {
+  position: relative;
+  max-width: 1100px;
+  color: #e7d9b5;
+  text-align: center;
+}
+
+.logo {
+  width: 60px;
+  height: 62px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  position: relative;
+  right: 450px;
+}
+
+.text {
+  max-width: 920px;
+  margin: 0 auto 28px;
+  font-size: 15.8px;
+  line-height: 1.68;
+  font-weight: 400;
+  color: #d9d0b8;
+  opacity: 0.92;
+  text-align: left;
+}
+
+.products {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 430px;
+}
+
+.image {
+  width: 430px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+.info {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.info p {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0;
+  color: #e7d9b5;
+  letter-spacing: 0.3px;
+}
+
+.info span {
+  display: block;
+  margin-top: 6px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #d6c295;
+}
+
+.button {
+  margin-top: 16px;
+  width: 168px;
+  height: 46px;
+  border: none;
+  border-radius: 6px;
+  background: #d6c295;
+  color: #2a3f1f;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background: #e8d9b0;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
